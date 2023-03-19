@@ -8,11 +8,11 @@ const StyledLoaderContainer = styled("div")(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100%",
+  height: "100%", 
   width: "100%",
   position: "fixed",
   backgroundColor: theme.palette.background.main,
-}));
+})); 
 
 //End Component styles
 

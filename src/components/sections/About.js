@@ -92,23 +92,26 @@ const About = () => {
     triggerOnce: true,
   });
   const technologiesArr = [
-    "Java",
-    "Swift",
-    "Node",
-    "AWS",
+    "Google Earth Engine",
+    "Mapbox",
+    "Python",
+    "R",
+    "Micosoft Azure",
+    "Leaflet ",
+    "Ipywidgets",
     "Material-UI",
-    "MetaMask",
-    "Ethereum",
+    "HTML",
+    "CSS",
     "Javascript",
     "PostgresSQL",
-    "Solidity",
-    "React",
-    "Kubernetes",
-    "Angular",
+    "ARCGIS",
+    "ENVI",
+    "ERDAS",
+    "QGIS",
+    "AutoCAD",
+    "Agi-soft Photo Scan",
+    "Geo-server",
     "Git",
-    "Express",
-    "Java",
-    "Swift",
   ];
 
   return (
@@ -131,11 +134,9 @@ const About = () => {
             <StyledDivider />
           </StyledGenericTitle>
           <StyledGenericSubText component="h1">
-            Hey there! My name is Maximilian and I have been building different
-            types of web and mobile applications for 7+ years. After publishing
-            a few games to the iOS App Store, I became more interested in
-            developing responsive web designs with React. Listed below are some
-            of the languages and technologies that I have experience using.
+            Hey there! My name is Godwin Kiprono and I have been building different
+            types of web GIS Applications for 1 year now. After getting more referrals from my clients, i have been outstanded to be the most person who handle and deliver quality work.
+            Below are list of the languages and technologies that I have experience  in using.
           </StyledGenericSubText>
           <StyledScrollingContainer>
             <StyledScrollingBelt>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../ThemeContext";
-import ResumePdf from "../assets/Maximilian Oberholtzer Resume 2023.pdf";
+import ResumePdf from "../assets/GODWIN KIPRONO- RESUME.pdf";
 import MenuIcon from "@mui/icons-material/Menu";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
@@ -38,9 +38,9 @@ const StyledAppBarContainer = styled("div")(({ theme }) => ({
 const StyledAppBar = styled(AppBar)(({ theme, isScrolled }) => ({
   transition:
     "all 0.4s cubic-bezier(0.645,0.045,0.355,1), background-color 0ms !important",
-  transitionDelay: "0.1s",
+  transitionDelay: "0.8s",
   boxShadow: isScrolled
-    ? "1px 0px 4px -1px rgb(0 0 0 / 20%), 0px 2px 20px 0px rgb(0 0 0 / 14%), 1px -1px 12px 0px rgb(0 0 0 / 12%) !important"
+    ? "1px 0px 4px -1px rgb(0 0 0 / 80%), 0px 2px 20px 0px rgb(0 0 0 / 14%), 1px -1px 12px 0px rgb(0 0 0 / 12%) !important"
     : "none !important",
   backgroundColor: theme.palette.background.main + " !important",
   padding: isScrolled ? "0.5rem 5rem 0.5rem 5rem" : "2rem 5rem 2rem 5rem",

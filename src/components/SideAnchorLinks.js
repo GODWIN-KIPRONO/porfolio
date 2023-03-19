@@ -1,11 +1,11 @@
 import { React } from "react";
 import {
-  CubeSvgPath,
+  // CubeSvgPath,
   emailSvgPath,
   githubSvgPath,
   linkedInSvgPath,
-  rocketLeagueSvgPath,
-  UTRSvgPath,
+  // rocketLeagueSvgPath,
+  // UTRSvgPath,
 } from "./SvgHelper";
 import { Button, styled } from "@mui/material";
 import { useTheme } from "@mui/material";
@@ -35,20 +35,20 @@ const StyledLeftAnchor = styled("div")({
   animationDuration: "1s",
 });
 
-const StyledRightAnchor = styled("div")({
-  width: "40px",
-  position: "fixed",
-  bottom: "16vh",
-  left: "auto",
-  right: "60px",
-  Zndex: "10",
-  animation: "fadeInRight",
-  animationDuration: "1s",
-});
+// const StyledRightAnchor = styled("div")({
+//   width: "40px",
+//   position: "fixed",
+//   bottom: "16vh",
+//   left: "auto",
+//   right: "60px",
+//   Zndex: "10",
+//   animation: "fadeInRight",
+//   animationDuration: "1s",
+// });
 //End component styles//
 
 const openEmail = () => {
-  window.location = "mailto:max.oberholtzer@yahoo.com";
+  window.location = "godikiruy1@gmail.com";
 };
 
 const openLink = (link) => {
@@ -63,7 +63,7 @@ const SideAnchorLinks = () => {
       <StyledLeftAnchor>
         <StyledAnchorButton
           onClick={() => {
-            openLink("https://www.linkedin.com/in/max-oberholtzer/");
+            openLink("https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav");
           }}
         >
           <svg
@@ -80,7 +80,7 @@ const SideAnchorLinks = () => {
         </StyledAnchorButton>
         <StyledAnchorButton
           onClick={() => {
-            openLink("https://github.com/Maximilian-Oberholtzer");
+            openLink("https://github.com/GODWIN-KIPRONO?tab=repositories");
           }}
         >
           <svg
@@ -114,70 +114,8 @@ const SideAnchorLinks = () => {
           </svg>
         </StyledAnchorButton>
       </StyledLeftAnchor>
-      <StyledRightAnchor>
-        <StyledAnchorButton
-          onClick={() => {
-            openLink("https://app.universaltennis.com/profiles/51049");
-          }}
-        >
-          <svg
-            fill={theme.palette.textMain.main}
-            width="44px"
-            height="44px"
-            viewBox="0 0 1024 1024"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Universal Tennis Rating</title>
-            <UTRSvgPath />
-          </svg>
-        </StyledAnchorButton>
-        <StyledAnchorButton
-          onClick={() => {
-            openLink(
-              "https://rocketleague.tracker.network/rocket-league/profile/steam/76561198262193029/overview"
-            );
-          }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 50 50"
-            width="44px"
-            height="44px"
-            fill={theme.palette.textMain.main}
-          >
-            <title>Rocket League Tracker</title>
-            <path d={rocketLeagueSvgPath} />
-          </svg>
-        </StyledAnchorButton>
-        <StyledAnchorButton
-          onClick={() => {
-            openLink("https://www.worldcubeassociation.org/persons/2022OBER04");
-          }}
-        >
-          <svg
-            version="1.0"
-            xmlns="http://www.w3.org/2000/svg"
-            width="44px"
-            height="44px"
-            viewBox="0 0 1250.000000 1280.000000"
-            preserveAspectRatio="xMidYMid meet"
-            fill={theme.palette.textMain.main}
-          >
-            <title>WCA Profile</title>
-            <metadata>
-              Created by potrace 1.15, written by Peter Selinger 2001-2017
-            </metadata>
-            <g
-              transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-              stroke="none"
-            >
-              <CubeSvgPath />
-            </g>
-          </svg>
-        </StyledAnchorButton>
-      </StyledRightAnchor>
-    </>
-  );
-};
+  </>    
+      );
+ };
 
 export default SideAnchorLinks;

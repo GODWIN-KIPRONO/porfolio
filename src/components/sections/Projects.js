@@ -7,6 +7,7 @@ import {
   styled,
   useMediaQuery,
   useTheme,
+  // StyledEngineProvider,
 } from "@mui/material";
 import {
   StyledDivider,
@@ -18,11 +19,9 @@ import {
 import "animate.css";
 import { useInView } from "react-intersection-observer";
 import * as Scroll from "react-scroll";
-import LaunchIcon from "@mui/icons-material/Launch";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import MellowHeads from "../../assets/mellowHeadsCollection.png";
-import RocketLeague from "../../assets/rocketLeague.png";
-import iosGames from "../../assets/iosGames.jpg";
+import forestCanopyHeight from "../../assets/forest Canopy Height.JPG";
+import Suitablehospital from "../../assets/Suitablehospital.PNG";
+import cropmapping from "../../assets/cropmapping.PNG";
 
 //Component styles//
 const StyledProjectsContainer = styled(Container)(({ theme }) => ({
@@ -39,7 +38,7 @@ const StyledProjectsContainer = styled(Container)(({ theme }) => ({
   [theme.breakpoints.down("xs")]: {
     width: "90% !important",
   },
-}));
+})); 
 const StyledProjectsGrid = styled(Grid)(({ theme }) => ({
   justifyContent: "space-around",
   width: "100%",
@@ -70,7 +69,7 @@ const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
         transition:
           "opacity 300ms ease-in-out 0s, transform 300ms ease-in-out 0s",
       },
-    },
+    }, 
     "&::after": {
       opacity: "0.9 !important",
       content: "''",
@@ -80,7 +79,7 @@ const StyledProjectsGridItem = styled(Grid)(({ theme }) => ({
       background:
         "linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.78) 70%)",
     },
-  },
+  }, 
   [theme.breakpoints.down("md")]: {
     maxWidth: "500px",
     "&::after": {
@@ -147,7 +146,7 @@ const StyledProjectsSkillText = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     fontSize: "0.7rem !important",
   },
-}));
+})); 
 
 //End component styles
 
@@ -175,24 +174,21 @@ const Projects = () => {
 
   //Content for project cards
   const mellowHeadSkills = [
-    "React",
-    "Material-UI",
-    "Redux",
-    "Polygon",
-    "MetaMask",
-  ];
-  const mellowHeadsLink = "https://mellowheadsnft.com";
-  const mellowHeadsGH =
-    "https://github.com/Maximilian-Oberholtzer/mellow-heads-nft";
-  const rocketLeagueSkills = ["React", "Bootstrap", "Node", "Express"];
-  const rocketLeagueLink = "http://www.feedsanalysistool.com/";
-  const rocketLeagueGH =
-    "https://github.com/Maximilian-Oberholtzer/replay-analysis-tool";
-  const iosGamesSkills = ["Swift", "SpriteKit", "Xcode", "Game Center"];
-
-  const openLink = (link) => {
-    window.open(link, "_blank");
-  };
+   "Google Earth Engine",
+   "GEDI Training Data"
+  ]; 
+  // const mellowHeadsLink = "https://mellowheadsnft.com";
+  // const mellowHeadsGH =
+  //   "https://github.com/Maximilian-Oberholtzer/mellow-heads-nft";
+  const rocketLeagueSkills = ["Leaflet", "Python", "GeoDjango"];
+  // const rocketLeagueLink = "http://www.feedsanalysistool.com/";
+  // const rocketLeagueGH =
+  //   "https://github.com/Maximilian-Oberholtzer/replay-analysis-tool";
+  const iosGamesSkills = ["Ipywidgets", "Geemap","Leaflet"];
+    
+  // const openLink = (link) => {    
+  //   window.open(link, "_blank"); 
+  // };
 
   return (
     <Scroll.Element name="Projects">
@@ -216,7 +212,7 @@ const Projects = () => {
             past few years!
           </StyledGenericSubText>
         </StyledGenericContainer>
-        <StyledProjectsContainer>
+        <StyledProjectsContainer> 
           <StyledProjectsGrid container rowSpacing={6} columnSpacing={12}>
             <StyledProjectsGridItem
               ref={p1}
@@ -233,12 +229,11 @@ const Projects = () => {
                   : { visibility: "hidden" }
               }
             >
-              <StyledProjectsImg alt="" src={MellowHeads} />
+              <StyledProjectsImg alt="" src={forestCanopyHeight} />
               <StyledProjectsTextField>
-                <StyledProjectsTitle>Mellow Heads NFT</StyledProjectsTitle>
+                <StyledProjectsTitle>MY FINAL YEAR PROJECT</StyledProjectsTitle>
                 <StyledProjectsSubText>
-                  Collection of 5000 algorithmically generated marshmallow
-                  characters on the Polygon Blockchain
+             This is one of the part of the project i did regarding Assesing the forest canopy and its degradation using machine learning Techniques
                 </StyledProjectsSubText>
                 <StyledProjectsSkillContainer>
                   {mellowHeadSkills.map((skill, index) => (
@@ -248,9 +243,6 @@ const Projects = () => {
                   ))}
                 </StyledProjectsSkillContainer>
                 <Button
-                  onClick={() => {
-                    openLink(mellowHeadsLink);
-                  }}
                   sx={{
                     padding: "0",
                     minWidth: "0",
@@ -258,7 +250,8 @@ const Projects = () => {
                     marginRight: "0.5rem",
                   }}
                 >
-                  <LaunchIcon />
+                  
+                  {/* <LaunchIcon /> */}
                 </Button>
                 <Button
                   sx={{
@@ -267,11 +260,11 @@ const Projects = () => {
                     marginTop: "0.43rem",
                     transform: "scale(0.90)",
                   }}
-                  onClick={() => {
-                    openLink(mellowHeadsGH);
-                  }}
+                  // onClick={() => {
+                  //   openLink(mellowHeadsGH);
+                  // }}
                 >
-                  <GitHubIcon />
+                  {/* <GitHubIcon /> */}
                 </Button>
               </StyledProjectsTextField>
             </StyledProjectsGridItem>
@@ -290,11 +283,11 @@ const Projects = () => {
                   : { visibility: "hidden" }
               }
             >
-              <StyledProjectsImg alt="" src={RocketLeague} />
+              <StyledProjectsImg alt="" src={Suitablehospital} />
               <StyledProjectsTextField>
-                <StyledProjectsTitle>Replay Analysis Tool</StyledProjectsTitle>
+                <StyledProjectsTitle>Web Application for Suitability for a new hospital</StyledProjectsTitle>
                 <StyledProjectsSubText>
-                  A tool to review and analyze Rocket League solo duel replays
+               The web application was developed mainly to assist the relevant authorities while making decisions to build a new infrastructure
                 </StyledProjectsSubText>
                 <StyledProjectsSkillContainer>
                   {rocketLeagueSkills.map((skill, index) => (
@@ -304,9 +297,9 @@ const Projects = () => {
                   ))}
                 </StyledProjectsSkillContainer>
                 <Button
-                  onClick={() => {
-                    openLink(rocketLeagueLink);
-                  }}
+                  // onClick={() => {
+                  //   openLink(rocketLeagueLink);
+                  // }}
                   sx={{
                     padding: "0",
                     minWidth: "0",
@@ -314,7 +307,7 @@ const Projects = () => {
                     marginRight: "0.5rem",
                   }}
                 >
-                  <LaunchIcon />
+                  {/* <LaunchIcon /> */}
                 </Button>
                 <Button
                   sx={{
@@ -323,11 +316,11 @@ const Projects = () => {
                     marginTop: "0.43rem",
                     transform: "scale(0.90)",
                   }}
-                  onClick={() => {
-                    openLink(rocketLeagueGH);
-                  }}
+                  // onClick={() => {
+                  //   openLink(rocketLeagueGH);
+                  // }}
                 >
-                  <GitHubIcon />
+                  {/* <GitHubIcon /> */}
                 </Button>
               </StyledProjectsTextField>
             </StyledProjectsGridItem>
@@ -348,7 +341,7 @@ const Projects = () => {
             >
               <StyledProjectsImg
                 alt=""
-                src={iosGames}
+                src={cropmapping}
                 sx={
                   sm
                     ? { transform: "scale(1.12)" }
@@ -356,10 +349,9 @@ const Projects = () => {
                 }
               />
               <StyledProjectsTextField>
-                <StyledProjectsTitle>iOS Games</StyledProjectsTitle>
+                <StyledProjectsTitle>Web Application for monitoring Crops</StyledProjectsTitle>
                 <StyledProjectsSubText>
-                  Bottle-Flip, Hibachi-Toss & Fruit-Fall collectively received
-                  4.5+ star reviews and had over 20k downloads internationally
+                  The web Application helps the farmers to track the crop mapping, health and Yield.
                 </StyledProjectsSubText>
                 <StyledProjectsSkillContainer>
                   {iosGamesSkills.map((skill, index) => (

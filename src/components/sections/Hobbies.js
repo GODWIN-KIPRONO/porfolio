@@ -121,13 +121,12 @@ const Hobbies = () => {
             }
           >
             <StyledGenericTitle component="h1">
-              Hobbies
+              HOBBIES
               <StyledDivider />
             </StyledGenericTitle>
             <StyledGenericSubText component="h1">
-              Aside from making applications, these are the things I that enjoy
-              to do for fun! Under each of them I have included my favorite
-              achievement.
+              Aside from making Web GIS applications and performing Geospatial Data Science, these are the things I that enjoy
+              to do for fun! 
             </StyledGenericSubText>
           </div>
 
@@ -159,7 +158,7 @@ const Hobbies = () => {
                 </motion.svg>
                 <StyledHobbiesGridTitle>Tennis</StyledHobbiesGridTitle>
                 <StyledHobbiesGridSubText>
-                  Peak ranking of 12 UTR in singles & 3-star college recruit
+               I like playing Tennis Game especially during my free time
                 </StyledHobbiesGridSubText>
               </div>
             </StyledHobbiesGridItem>
@@ -188,9 +187,9 @@ const Hobbies = () => {
                     strokeWidth="7"
                   ></motion.path>
                 </motion.svg>{" "}
-                <StyledHobbiesGridTitle>Speed Cubing</StyledHobbiesGridTitle>
+                <StyledHobbiesGridTitle>Cubing Game</StyledHobbiesGridTitle>
                 <StyledHobbiesGridSubText>
-                  Fastest recorded 3x3 solve time is currently 9.94 seconds
+            I can match for you the colors within a short time normally when i debug a code succesfully
                 </StyledHobbiesGridSubText>
               </div>
             </StyledHobbiesGridItem>
@@ -221,9 +220,9 @@ const Hobbies = () => {
                     strokeWidth="18"
                   ></motion.path>
                 </motion.svg>
-                <StyledHobbiesGridTitle>Rocket League</StyledHobbiesGridTitle>
+                <StyledHobbiesGridTitle>Rocket Drive</StyledHobbiesGridTitle>
                 <StyledHobbiesGridSubText>
-                  Top 100 on global leaderboard in Solo Duel game mode
+                Also like playing Games during leasure time.
                 </StyledHobbiesGridSubText>
               </div>
             </StyledHobbiesGridItem>

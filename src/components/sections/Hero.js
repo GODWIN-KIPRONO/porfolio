@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Grid, Typography, styled } from "@mui/material";
-import maxAvatar from "../../assets/max.png";
+import maxAvatar from "../../assets/profile picture.jpg";
 import "animate.css";
 
 //Component styles//
@@ -12,9 +12,8 @@ const StyledHeroRoot = styled("section")(({ theme }) => ({
   flexDirection: "column",
   alignItems: "center",
   backgroundColor: theme.palette.background.main,
-  minHeight: "100vh",
-}));
-
+  minHeight: "100vh", 
+}));   
 const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
   display: "flex !important",
   flex: "1",
@@ -22,7 +21,7 @@ const StyledHeroContainer = styled(Container)(({ theme, ismobile }) => ({
   alignSelf: "center",
   boxSizing: "unset !important",
   width: "unset",
-  ["@media (max-height: 804px)"]: {
+  "@media (max-height: 804px)": {
     paddingTop: ismobile ? "0px" : "102px",
   },
   [theme.breakpoints.up("sm")]: {
@@ -36,9 +35,8 @@ const StyledHeroGrid = styled(Grid)(({ ismobile }) => ({
   width: "auto",
   marginBottom: ismobile ? "3.5rem" : "0rem",
 }));
-
 const StyledHeroImage = styled("img")(({ theme }) => ({
-  animation: "fadeIn",
+  animation: "fadeIn", 
   animationDuration: "2s",
   width: "270px",
   borderRadius: "2rem",
@@ -133,11 +131,10 @@ const Hero = () => {
           </Grid>
           <StyledHeroText item>
             <StyledHeroTitle component="h1" variant="h2">
-              Maximilian Oberholtzer
+             Godwin Kiprono
             </StyledHeroTitle>
             <StyledHeroSubText component="h1" variant="h5">
-              Full stack software engineer who enjoys creative coding and UI/UX
-              designs
+              Experienced with GIS and Remote sensing. Main focus in Web GIS development, Working with Google Earth Engine, Performing Spatial Data Science and Environmental and Social Impact Asessment.
             </StyledHeroSubText>
           </StyledHeroText>
         </StyledHeroGrid>

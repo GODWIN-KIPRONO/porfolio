@@ -9,12 +9,12 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import {
-  CubeSvgPath,
+  // CubeSvgPath,
   emailSvgPath,
   githubSvgPath,
   linkedInSvgPath,
-  rocketLeagueSvgPath,
-  UTRSvgPath,
+  // rocketLeagueSvgPath,
+  // UTRSvgPath,
 } from "../SvgHelper";
 
 //Component styles//
@@ -115,7 +115,7 @@ const Footer = () => {
               </g>
             </svg>
           </StyledListItemButton>
-          <StyledListItemButton
+          {/* <StyledListItemButton
             onClick={() => {
               openLink("https://app.universaltennis.com/profiles/51049");
             }}
@@ -127,7 +127,7 @@ const Footer = () => {
               viewBox="0 0 1024 1024"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>Universal Tennis Rating</title>
+              <title>Universla Tennis Rating</title>
               <UTRSvgPath />
             </svg>
           </StyledListItemButton>
@@ -176,11 +176,11 @@ const Footer = () => {
                 <CubeSvgPath />
               </g>
             </svg>
-          </StyledListItemButton>
+          </StyledListItemButton> */}
         </StyledFooterList>
       )}
       <StyledFooterText>
-        Designed & Built by Maximilian Oberholtzer
+        Designed & Built by Mr. Godwin Kiprono<br></br><b> Whatzap Number +254702920064</b>
       </StyledFooterText>
     </StyledFooterRoot>
   );

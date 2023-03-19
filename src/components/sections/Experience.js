@@ -1,18 +1,20 @@
-import { React, useState } from "react";
-import { Container, styled, useTheme } from "@mui/material";
+import React from "react";
+// import styled from 'styled-components';
+import { styled, useTheme, Container, Typography} from "@mui/material";
+
 import {
   StyledDivider,
   StyledGenericContainer,
   StyledGenericRoot,
   StyledGenericSubText,
   StyledGenericTitle,
-} from "./Styles";
-import Typography from "@mui/material/Typography";
+} from "./Styles"; 
+// import Typography from "@mui/material/Typography";
 import { useInView } from "react-intersection-observer";
 import * as Scroll from "react-scroll";
 import data from "../../content/experience.json";
 import Slider from "react-slick";
-import "animate.css";
+import "animate.css"; 
 
 //Component styles
 const StyledCarouselContainer = styled(Container)(({ theme }) => ({
@@ -116,8 +118,7 @@ const Experience = () => {
             <StyledDivider />
           </StyledGenericTitle>
           <StyledGenericSubText component="h1">
-            Since graduating from Ursinus College in 2018, I have worked as a
-            full stack software engineer in the professional space.
+            After finishing my undergraduate programme last year at Dedan Kimathi University. I have been working on projects as freelance jobs. Also partnered with other professional experts in doing projects.<br></br><br></br><b>PLEASE SCROLL SIDEWAYS</b>
           </StyledGenericSubText>
         </StyledGenericContainer>
 
@@ -148,7 +149,7 @@ const Experience = () => {
         </StyledCarouselContainer>
       </StyledGenericRoot>
     </Scroll.Element>
-  );
+  ); 
 };
 
 export default Experience;
